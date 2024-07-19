@@ -18,13 +18,13 @@ do
     fping -g $ip
 done
 ```
-![Diagram]()
+![Diagram](https://github.com/aele1401/Network-Fundamentals/blob/main/Images/fping.png)
 
 - OSI layer is layer 3 the network layer which handles the routing, logical adressing, packet forwarding, fragmentation and reassembly, and error handling. Common protocols include IP (IPv4 & 6), ICMP (which we used fping in this case), and IGMP. Devices that operate at this layer are routers and layer 3 network switches.
 
 ### Nmap
 - Run an nmap scan with: `sudo nmap -sS 167.172.144.11`
-![Diagram]()
+![Diagram](https://github.com/aele1401/Network-Fundamentals/blob/main/Images/nmap.png)
 
 - OSI layer is 2 the data link layer that's responsible for node-to-node data transfer and error detection and correction in the physical transmission medium. Protocols include ethernet, PPP, Wi-Fi, and HDLC. Devices operating at this layer are bridges and switches.
 - Open port is port 22 which should be closed if not in use and if in use to secure it by enabling public and private key encryption.
@@ -32,16 +32,15 @@ done
 ### NSLOOKUP
 - Use nslookup tool to exmaine the following domain.
     * `nslookup rollingstone.com` or `nslookup 151.101.128.69`
-    ![Diagram]()
-    ![Diagram]()
-    ![Diagram]()
+    ![Diagram](https://github.com/aele1401/Network-Fundamentals/blob/main/Images/nslookup1.png)
+    ![Diagram](https://github.com/aele1401/Network-Fundamentals/blob/main/Images/nslookup2.png)
 - Layer 5, session layer for  establishing, managing, and terminating sessions between two communicating devices or applications. It provides the mechanisms to control the dialogues (connections) between computers. Protocols include RPC, SQL PPTP, and NetBIOS. Devices include application and database servers.
 - Based on the information in nslookup, IOC of DNS spoofing that can redirect web traffic.
 - For mitigating this, use TLS encryption to mitigate domain compromise.
 
 ### Identifying the Hacker
-![Diagram]()
-![Diagram]()
+![Diagram](https://github.com/aele1401/Network-Fundamentals/blob/main/Images/hacker1.png)
+![Diagram](https://github.com/aele1401/Network-Fundamentals/blob/main/Images/hacker2.png)
 - Layer 3 - network layer attack.
 - Hacker located on POST /formservice/
 - Hacker has the MAC address **00:0C:29:1D:B3:B1**
