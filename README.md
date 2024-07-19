@@ -1,4 +1,4 @@
-# Networking Fundamentals
+# Network Administration - Vulnerabilites & Mitigation
 
 ### Pinging Hosts
 - `sudo apt install fping` to install fping if not already installed.
